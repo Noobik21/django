@@ -1,0 +1,14 @@
+{% extends "flatpages/default.html" %}
+{% block title %}
+Закрытая страница
+{% endblock title %}
+{% block body %}
+<style>
+    body {
+        font-family: Georgia;
+        font-size: 22px;
+    }
+</style>
+<h1>{{ flatpage.title }}</h1>
+{{ flatpage.content }}
+{% endblock body %}
